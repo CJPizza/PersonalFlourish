@@ -1,3 +1,4 @@
+<!DOCTYPE html>
 <html lang="en">
 <head>
 <meta charset="UTF-8"/>
@@ -79,7 +80,7 @@ body {
   font-size: 0.7rem;
   letter-spacing: 0.1em;
   color: var(--text-secondary);
-  margin-bottom: 32px;
+  margin-bottom: 24px;
   box-shadow: var(--shadow);
   opacity: 0;
   animation: popIn 0.6s cubic-bezier(0.34,1.56,0.64,1) 0.1s forwards;
@@ -88,12 +89,13 @@ body {
 
 .hero-title {
   font-family: 'Fraunces', serif;
-  font-size: clamp(3rem, 8vw, 6rem);
+  font-size: clamp(4rem, 12vw, 8.5rem); /* Increased for a much bigger, bolder font on desktop */
   font-weight: 900;
-  line-height: 1.0;
+  line-height: 1.05;
   color: var(--text-primary);
   opacity: 0;
   animation: slideUp 0.7s ease 0.3s forwards;
+  margin-bottom: 12px;
 }
 
 .hero-title .highlight {
@@ -109,8 +111,8 @@ body {
 }
 
 .hero-sub {
-  margin-top: 20px;
-  font-size: 1rem;
+  margin-top: 16px;
+  font-size: 1.25rem; /* Increased subtitle to match the larger title */
   color: var(--text-secondary);
   font-weight: 300;
   letter-spacing: 0.03em;
@@ -194,9 +196,9 @@ body {
   border-bottom: 1.5px solid var(--border);
   padding: 8px 28px;
   display: flex;
-  justify-content: center; /* Centers the nav items */
+  justify-content: center;
   align-items: center;
-  flex-wrap: wrap; /* Allows items to wrap onto a second line if the screen is narrow */
+  flex-wrap: wrap;
   gap: 4px 12px;
 }
 .nav-item {
@@ -379,7 +381,7 @@ body {
 /* ── CARD GRID ── */
 .card-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Reduced from 320px to 280px to ensure 3 columns fit easily */
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); 
   gap: 20px;
 }
 
@@ -594,14 +596,14 @@ footer {
             <div class="nk-label label-1">Narrative Knowing 1</div>
             <div class="nk-title">The Questioning Mind 🤔</div>
             <p class="nk-body">
-              Descartes' <em>cogito</em> clicked instantly — doubting as thinking, thinking as existing. The gym became Carl's lab for self-discovery: Mead's generalized other, Cooley's looking-glass self, and Goffman's performance all playing out between sets of music blasting between Lady Gaga songs. Family built the invisible scaffolding before he ever stepped foot in that weight room.
+              Descartes' <em>cogito</em> clicked instantly for me — doubting as thinking, thinking as existing[cite: 105]. The gym became my lab for self-discovery: Mead's generalized other, Cooley's looking-glass self, and Goffman's performance all playing out while blasting Lady Gaga songs[cite: 108, 109, 111, 113, 115, 116]. My family built the invisible scaffolding before I ever stepped foot in that weight room[cite: 120].
             </p>
           </div>
           <div class="nk-tab">
             <div class="nk-label label-2">Narrative Knowing 2</div>
             <div class="nk-title">The Constructed Self 🧩</div>
             <p class="nk-body">
-              Six dimensions, one person. A deliberate digital privacy strategy, a father-shaped masculinity, a foundation-first economic mindset, and faith that coexists with empiricism. Foucault says power shapes identity — Carl says: acknowledged, but not surrendered to. His cats remain offline. Permanently.
+              I am navigating six dimensions[cite: 98]. I have a deliberate digital privacy strategy [cite: 81], a masculinity shaped by my father [cite: 87], a foundation-first economic mindset [cite: 92], and a faith that coexists with empiricism[cite: 96, 97]. Foucault says power shapes identity — I say it is acknowledged, but not surrendered to[cite: 94, 95]. My cats remain offline. Permanently[cite: 81].
             </p>
           </div>
         </div>
@@ -632,15 +634,15 @@ footer {
         <div class="p-card-body">
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-continue">✓ Continue</span></div>
-            <p class="action-text">Keep practicing Cartesian <em>methodic doubt</em> in academic work and at BSP — questioning assumptions before accepting them. Journal one challenged assumption daily, reviewed monthly all semester long.</p>
+            <p class="action-text">I will keep practicing Cartesian <em>methodic doubt</em> in my academic work and at the BSP — questioning assumptions before accepting them. I will journal one challenged assumption daily and review it monthly all semester long.</p>
           </div>
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-stop">✕ Stop</span></div>
-            <p class="action-text">Stop treating philosophy purely as coursework to survive. By end of term, apply at least one philosophical lens per week to a real personal decision — not just a paper.</p>
+            <p class="action-text">I will stop treating philosophy purely as coursework to survive. By the end of the term, I will apply at least one philosophical lens per week to a real personal decision — not just a paper.</p>
           </div>
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-start">→ Start</span></div>
-            <p class="action-text">Start reading one philosophical text per month (kicking off with Camus' <em>Myth of Sisyphus</em> in April 🙂), writing a short reflection after each to build a personal ethical compass.</p>
+            <p class="action-text">I will start reading one philosophical text per month (kicking off with Camus' <em>Myth of Sisyphus</em> in April 🙂), writing a short reflection after each to build a personal ethical compass.</p>
           </div>
         </div>
       </div>
@@ -657,15 +659,15 @@ footer {
         <div class="p-card-body">
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-continue">✓ Continue</span></div>
-            <p class="action-text">Use Cooley's looking-glass self as growth fuel, not anxiety. Log positive social feedback from the gym as identity reinforcement — at every session, at least 3× a week.</p>
+            <p class="action-text">I will use Cooley's looking-glass self as growth fuel, not anxiety. I will log positive social feedback from the gym as identity reinforcement — at every session, at least 3× a week.</p>
           </div>
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-stop">✕ Stop</span></div>
-            <p class="action-text">Stop doom-scrolling Alex Eubank-type fitness feeds that trigger Festinger's upward comparison with zero payoff. Unfollow or mute at least 5 of those accounts within two weeks. Sorry, algorithm.</p>
+            <p class="action-text">I will stop doom-scrolling Alex Eubank-type fitness feeds that trigger Festinger's upward comparison with zero payoff. I will unfollow or mute at least 5 of those accounts within two weeks. Sorry, algorithm.</p>
           </div>
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-start">→ Start</span></div>
-            <p class="action-text">Start a Sunday self-affirmation habit — name 3 specific wins each week, tracked in a habit app for 3 months — building self-worth from within, not from comparison. 💪</p>
+            <p class="action-text">I will start a Sunday self-affirmation habit — naming 3 specific wins each week, tracked in a habit app for 3 months — building self-worth from within, not from comparison. 💪</p>
           </div>
         </div>
       </div>
@@ -682,15 +684,15 @@ footer {
         <div class="p-card-body">
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-continue">✓ Continue</span></div>
-            <p class="action-text">Keep Goffman's authentic front stage alive — professional and focused in meetings, still cracking jokes between sets. Prepping for every BSP task while keeping real rapport with colleagues.</p>
+            <p class="action-text">I will keep Goffman's authentic front stage alive — professional and focused in meetings, but still cracking jokes between sets. I will prep for every BSP task while keeping real rapport with colleagues.</p>
           </div>
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-stop">✕ Stop</span></div>
-            <p class="action-text">Stop passively absorbing Manila hookup culture as if it's just "how things are." By end of month, swap that content for stuff that actually reflects what I believe about respect and relationships.</p>
+            <p class="action-text">I will stop passively absorbing Manila hookup culture as if it's just "how things are". By the end of the month, I will swap that content for stuff that actually reflects what I believe about respect and relationships.</p>
           </div>
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-start">→ Start</span></div>
-            <p class="action-text">Join at least one community-oriented activity per semester (DLSU org, volunteer program, or professional association) by end of April 2026 to grow the collective side of my identity. 🤝</p>
+            <p class="action-text">I will join at least one community-oriented activity per semester (DLSU org, volunteer program, or professional association) by the end of April 2026 to grow the collective side of my identity. 🤝</p>
           </div>
         </div>
       </div>
@@ -707,15 +709,15 @@ footer {
         <div class="p-card-body">
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-continue">✓ Continue</span></div>
-            <p class="action-text">Keep honoring the values of discipline and quiet strength passed down from family — and consciously naming that influence at least once per month in my journal. They laid the groundwork first.</p>
+            <p class="action-text">I will keep honoring the values of discipline and quiet strength passed down from my family — and consciously name that influence at least once per month in my journal. They laid the groundwork first.</p>
           </div>
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-stop">✕ Stop</span></div>
-            <p class="action-text">Stop assuming Western individualism is the default or superior lens. By June 2026, finish at least one reading on Filipino cultural psychology (Kapwa theory) to balance how I see myself and others.</p>
+            <p class="action-text">I will stop assuming Western individualism is the default or superior lens. By June 2026, I will finish at least one reading on Filipino cultural psychology (Kapwa theory) to balance how I see myself and others.</p>
           </div>
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-start">→ Start</span></div>
-            <p class="action-text">Start documenting family stories — 2 recorded or written conversations with parents per semester — to preserve the cultural memory that shaped me across generations, not just my own lifetime. 📖</p>
+            <p class="action-text">I will start documenting family stories — 2 recorded or written conversations with parents per semester — to preserve the cultural memory that shaped me across generations, not just my own lifetime. 📖</p>
           </div>
         </div>
       </div>
@@ -732,15 +734,15 @@ footer {
         <div class="p-card-body">
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-continue">✓ Continue</span></div>
-            <p class="action-text">Keep honoring relational, collective roots — the Eastern-aligned truth that my goals were shaped by those who believed in me first. Invest in relationships as ends in themselves: one meaningful family conversation per week.</p>
+            <p class="action-text">I will keep honoring my relational, collective roots — the Eastern-aligned truth that my goals were shaped by those who believed in me first. I will invest in relationships as ends in themselves: one meaningful family conversation per week.</p>
           </div>
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-stop">✕ Stop</span></div>
-            <p class="action-text">Stop reducing success purely to measurable individual outputs (grades, PRs, salary). By year-end, integrate harmony, interdependence, and relational joy as legitimate markers of a life well-lived.</p>
+            <p class="action-text">I will stop reducing success purely to measurable individual outputs (grades, PRs, salary). By year-end, I will integrate harmony, interdependence, and relational joy as legitimate markers of a life well-lived.</p>
           </div>
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-start">→ Start</span></div>
-            <p class="action-text">Start a 10-minute daily mindfulness/stillness practice this month — tracked via habit app for 60 consecutive days — to balance the analytical, always-optimizing Western brain with some actual inner peace. 🧘</p>
+            <p class="action-text">I will start a 10-minute daily mindfulness/stillness practice this month — tracked via a habit app for 60 consecutive days — to balance my analytical, always-optimizing Western brain with some actual inner peace. 🧘</p>
           </div>
         </div>
       </div>
@@ -771,15 +773,15 @@ footer {
         <div class="p-card-body">
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-continue">✓ Continue</span></div>
-            <p class="action-text">Keep training 3× per week, treating discipline as identity (thanks, Mead). Track progressive overload monthly via training log — measurable, consistent physical growth through end of 2026.</p>
+            <p class="action-text">I will keep training 3× per week, treating discipline as my identity, reflecting Mead's generalized other. I will track progressive overload monthly via a training log — measurable, consistent physical growth through the end of 2026.</p>
           </div>
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-stop">✕ Stop</span></div>
-            <p class="action-text">Stop using social media physique comparisons as the main benchmark. Within 30 days, switch to personal records (PRs) as the primary yardstick. My progress vs. my past self — nobody else's.</p>
+            <p class="action-text">I will stop using social media physique comparisons as the main benchmark. Within 30 days, I will switch to personal records (PRs) as the primary yardstick. My progress vs. my past self — nobody else's.</p>
           </div>
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-start">→ Start</span></div>
-            <p class="action-text">Start a structured nutrition plan (one evidence-based resource or dietitian consultation by May 2026), tracked weekly — because you can't out-train a bad diet, and the gym deserves a proper teammate. 🥗</p>
+            <p class="action-text">I will start a structured nutrition plan (one evidence-based resource or dietitian consultation by May 2026), tracked weekly — because I can't out-train a bad diet, and the gym deserves a proper teammate. 🥗</p>
           </div>
         </div>
       </div>
@@ -796,15 +798,15 @@ footer {
         <div class="p-card-body">
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-continue">✓ Continue</span></div>
-            <p class="action-text">Keep embodying the masculinity modeled by dad — consistency, quiet strength, showing up. One conscious action per week that reflects these values in relationships, logged in my journal.</p>
+            <p class="action-text">I will keep embodying the masculinity modeled by my dad — consistency, quiet strength, and showing up. One conscious action per week that reflects these values in relationships, logged in my journal.</p>
           </div>
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-stop">✕ Stop</span></div>
-            <p class="action-text">Stop consuming media that frames hookup culture as aspirational. By end of March 2026, audit media diet and replace at least 50% of leisure content with stuff that actually reflects my values on intimacy.</p>
+            <p class="action-text">I will stop consuming media that frames hookup culture as aspirational. By the end of March 2026, I will audit my media diet and replace at least 50% of leisure content with stuff that actually reflects my values on intimacy.</p>
           </div>
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-start">→ Start</span></div>
-            <p class="action-text">Start Tolman-inspired monthly journaling on what I genuinely value in relationships — not what culture expects — producing 4 honest reflections by June 2026. 💭</p>
+            <p class="action-text">I will start Tolman-inspired monthly journaling on what I genuinely value in relationships — not what culture expects — producing 4 honest reflections by June 2026. 💭</p>
           </div>
         </div>
       </div>
@@ -821,15 +823,15 @@ footer {
         <div class="p-card-body">
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-continue">✓ Continue</span></div>
-            <p class="action-text">Keep the foundation-first mindset — skills, BSP internship performance, and academics over lifestyle spend. Save at least ₱2,000/month throughout 2026 toward an emergency fund. Boring but necessary. 🏦</p>
+            <p class="action-text">I will keep my foundation-first mindset — prioritizing skills, my BSP internship performance, and academics over lifestyle spend. I will save at least ₱2,000/month throughout 2026 toward an emergency fund. Boring but necessary. 🏦</p>
           </div>
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-stop">✕ Stop</span></div>
-            <p class="action-text">Stop treating PC hardware as identity (Belk's Extended Self). Enforce a 90-day wait rule for any non-essential purchase above ₱5,000 by May 2026. Yes, the GPU can wait.</p>
+            <p class="action-text">I will stop treating PC hardware as my identity, moving away from Belk's Extended Self. I will enforce a 90-day wait rule for any non-essential purchase above ₱5,000 by May 2026. Yes, the GPU can wait.</p>
           </div>
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-start">→ Start</span></div>
-            <p class="action-text">Start a personal finance plan by April 2026 — monthly budget spreadsheet + one investment instrument explored (PERA, MP2) — turning the provider mindset I inherited from dad into actual numbers. 📈</p>
+            <p class="action-text">I will start a personal finance plan by April 2026 — a monthly budget spreadsheet + one investment instrument explored (PERA, MP2) — turning the provider mindset I inherited from my dad into actual numbers. 📈</p>
           </div>
         </div>
       </div>
@@ -846,15 +848,15 @@ footer {
         <div class="p-card-body">
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-continue">✓ Continue</span></div>
-            <p class="action-text">Keep the deliberate privacy architecture — personality, music taste, and the cats stay offline. Non-negotiable. Reviewed every 6 months to make sure it's still serving me and not just becoming paranoia. 🐱</p>
+            <p class="action-text">I will keep my deliberate privacy architecture — my personality, music taste, and photos of my cats stay entirely offline. Non-negotiable. I will review this every 6 months to make sure it's still serving me and not just becoming paranoia. 🐱</p>
           </div>
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-stop">✕ Stop</span></div>
-            <p class="action-text">Stop mindless scrolling that lets Cultivation Theory quietly reshape what I think is "normal." By end of April 2026: 45-minute daily limit on entertainment social media, tracked weekly. The algorithm is not my friend.</p>
+            <p class="action-text">I will stop mindless scrolling that lets Cultivation Theory quietly reshape what I think is "normal". By the end of April 2026: 45-minute daily limit on entertainment social media, tracked weekly. The algorithm is not my friend.</p>
           </div>
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-start">→ Start</span></div>
-            <p class="action-text">Start a purposeful professional online presence — GitHub portfolio + LinkedIn updated quarterly — first update by May 2026, 3 visible projects by year-end. Showing skills, not my private life. 💻</p>
+            <p class="action-text">I will start a purposeful professional online presence — GitHub portfolio + LinkedIn updated quarterly — first update by May 2026, 3 visible projects by year-end. Showing my skills, not my private life. 💻</p>
           </div>
         </div>
       </div>
@@ -871,15 +873,15 @@ footer {
         <div class="p-card-body">
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-continue">✓ Continue</span></div>
-            <p class="action-text">Keep engaging with political issues through Foucault's critical lens — power shapes identity, but awareness is the first step to agency. Read at least 2 news sources from different viewpoints weekly.</p>
+            <p class="action-text">I will keep engaging with political issues through Foucault's critical lens — acknowledging that power shapes identity, but awareness is the first step to agency. I will read at least 2 news sources from different viewpoints weekly.</p>
           </div>
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-stop">✕ Stop</span></div>
-            <p class="action-text">Stop treating politics as "too abstract to bother with." By June 2026, register to vote if not yet done and attend at least one civic activity — forum, barangay meeting, or advocacy event. It counts.</p>
+            <p class="action-text">I will stop treating politics as "too abstract to bother with." By June 2026, I will register to vote if not yet done and attend at least one civic activity — forum, barangay meeting, or advocacy event. It counts.</p>
           </div>
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-start">→ Start</span></div>
-            <p class="action-text">Start applying data analytics skills to a real Philippine social issue — one self-directed analysis project by July 2026 — so political awareness becomes something I can actually do something with. 📊</p>
+            <p class="action-text">I will start applying my data analytics skills to a real Philippine social issue — one self-directed analysis project by July 2026 — so political awareness becomes something I can actually do something with. 📊</p>
           </div>
         </div>
       </div>
@@ -896,15 +898,15 @@ footer {
         <div class="p-card-body">
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-continue">✓ Continue</span></div>
-            <p class="action-text">Keep faith and empiricism as complementary — not contradictory — orientations. Attend Mass at least 2× monthly as a concrete practice, logged and sustained through end of 2026. Logic and faith, coexisting peacefully. ✨</p>
+            <p class="action-text">I will keep my faith and empiricism as complementary — not contradictory — orientations. I will attend Mass at least 2× monthly as a concrete practice, logged and sustained through the end of 2026. Logic and faith, coexisting peacefully. ✨</p>
           </div>
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-stop">✕ Stop</span></div>
-            <p class="action-text">Stop keeping spirituality completely compartmentalized from daily decisions. By May 2026, build in a conscious ethical reflection step before major choices — checking both the data and the moral compass before acting.</p>
+            <p class="action-text">I will stop keeping spirituality completely compartmentalized from daily decisions. By May 2026, I will build in a conscious ethical reflection step before major choices — checking both the data and the moral compass before acting.</p>
           </div>
           <div class="action-row">
             <div class="action-row-label"><span class="action-pill pill-start">→ Start</span></div>
-            <p class="action-text">Start a faith-and-reason reading practice — one book bridging science and spirituality or ethics per semester, beginning June 2026, with a written reflection after — to build the integrated worldview I'm slowly becoming. 📚</p>
+            <p class="action-text">I will start a faith-and-reason reading practice — one book bridging science and spirituality or ethics per semester, beginning June 2026, with a written reflection after — to build the integrated worldview I'm slowly becoming. 📚</p>
           </div>
         </div>
       </div>
